@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import "../../public/style.css";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  useEffect(() => {
+    document.title = "LinkHub - Register";
+  });
   return (
     <div className="register">
       <div className="register-wapper">

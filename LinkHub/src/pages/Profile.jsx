@@ -2,9 +2,13 @@ import Navbar from "../components/navbar/Navbar";
 import LeftSidebar from "../components/left-sidebar/LeftSidebar";
 import RightSidebar from "../components/right-sidebar/RightSidebar";
 import Feeds from "../components/feeds/Feeds";
+import { useEffect } from "react";
 import "../../public/style.css";
 
 const Profile = () => {
+  useEffect(() => {
+    document.title = "LinkHub - Profile";
+  });
   return (
     <>
       <Navbar></Navbar>
